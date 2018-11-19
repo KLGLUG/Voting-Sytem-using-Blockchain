@@ -1,0 +1,37 @@
+		###Installation of Ethereum in Linux.
+
+> sudo su
+
+>sudo apt-get update
+
+>sudo apt-get install software-properties-common
+
+>sudo add-apt-repository -y ppa:ethereum/ethereum
+
+>sudo apt-get update
+
+>sudo apt-get install ethereum
+		
+		###Use the go language to create account on your node
+
+>geth account new
+
+>geth --help
+
+>vim genesis.json
+
+		###Clone the repository to a directory
+
+>git clone https://github.com/ethereum/go-ethereum
+
+
+		###Install Go and C compilers
+
+>sudo apt-get install -y build-essential golang
+
+		
+		###Build geth program 
+
+>cd go-ethereum
+
+>make geth

@@ -1,0 +1,46 @@
+### Update your system
+>sudo apt-get update
+
+###Install wget package
+>sudo apt-get install wget
+
+### Install latest version of Go
+>wget https://storage.googleapis.com/golang/go1.9.2.linux-amd64.tar.gz
+
+### Extract the archive
+>tar -zxvf  go1.9.2.linux-amd64.tar.gz -C /usr/local/
+
+###Set up environment variables
+>export PATH=$PATH:/usr/local/go/bin
+
+>mkdir $HOME/work
+
+>export GOPATH=$HOME/work
+
+###Verify Go installation
+>go version
+
+###Check go environment variables
+>go env
+
+###Proceed to go directory
+>cd go
+
+###Spew allows us to view 'structs' and 'slices' cleanly formatted in our console.
+
+>go get github.com/davecgh/go-spew/spew
+
+###Gorilla/mux is a popular package for writing web handlers.
+
+>go get github.com/gorilla/mux
+
+###Gotdotenv lets us read from a .env file that we keep in the root of our directory so we don't have to hardcore things like our http ports. we'll need this too.
+
+>go get github.com/joho/godotenv
+
+####Next step
+Let’s also create a .env file in the root of our directory defining the port that will serve http requests. Just add one line to this file:
+
+ADDR=8080
+
+Create a main.go file. Everything from now on will be written to this file and will be less than 200 lines of code.

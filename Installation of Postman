@@ -1,0 +1,17 @@
+Go to the official website of https://www.getpostman.com/apps
+
+Download the Linux Version
+
+Extract the setup file and run the file.
+
+Skip the account creation.
+
+POST http://localhost:8080
+
+In Body
+{
+"BPM":55
+}
+
+In Settings enable Proxy as Use Sytem Proxy and Switch OFF the SSL certificate verification
+
